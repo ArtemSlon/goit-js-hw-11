@@ -64,6 +64,7 @@ width: 1128px;
 flex-wrap: wrap;
 gap: 24px;
 padding: 0px 156px 32px;
+margin: 0 auto;
 }
 .gallery-item{
 width: 360px;
