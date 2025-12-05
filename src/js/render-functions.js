@@ -6,7 +6,7 @@ let loader = null;
 
 export function showLoader() {
   if (!loader) {
-    loader = document.createElement("div");
+    loader = document.createElement("span");
     loader.classList.add("loader", "hidden"); 
     document.body.appendChild(loader);
   }
