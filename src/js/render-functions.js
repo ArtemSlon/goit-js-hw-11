@@ -2,20 +2,17 @@ import SimpleLightbox from "simplelightbox";
 import "simplelightbox/dist/simple-lightbox.min.css";
 
 const galleryEl = document.querySelector(".gallery");
-let loader = null;
+
+const loader = document.querySelector(".loader");
 
 export function showLoader() {
-  if (!loader) {
-    loader = document.createElement("span");
-    loader.classList.add("loader", "hidden"); 
-    document.body.appendChild(loader);
-  }
   loader.classList.remove("hidden");
 }
 
 export function hideLoader() {
-  if (loader) loader.classList.add("hidden");
+  loader.classList.add("hidden");
 }
+
 
 const lightbox = new SimpleLightbox(".gallery a", {
   captionsData: "alt",
